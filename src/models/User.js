@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt')
 
 
 const User = sequelize.define('user', {
-    firsstName: {
+    firstName: {
         type: DataTypes.STRING,
         allowNull: false
     },
