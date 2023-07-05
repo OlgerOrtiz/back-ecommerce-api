@@ -1,11 +1,10 @@
 const sequelize = require('../utils/connection');
 require('../models')
-
 const main = async () => {
     try {
         await sequelize.sync({ force: true });
         await sequelize.close()
-        console.log('database reset succesfully');
+        console.log('Database reset successful :gafas_de_sol:');
     } catch (error) {
         console.log(error);
     }

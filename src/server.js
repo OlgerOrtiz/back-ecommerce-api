@@ -1,9 +1,7 @@
 const app = require('./app');
 const sequelize = require('./utils/connection');
 require('./models')
-
-const PORT = process.env.PORT || 8090;
-
+const PORT = process.env.PORT || 8080;
 const main = async () => {
     try {
         sequelize.sync();
@@ -14,5 +12,4 @@ const main = async () => {
         console.log(error)
     }
 }
-
 main();
